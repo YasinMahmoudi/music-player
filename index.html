@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Music Player </title>
+    <link rel="shortcut icon" href="hey.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <div class="top">
+          <button class="btn back">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+
+          <h3 class="app-name"> Music Player </h3>
+
+          <button class="btn setting">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+        </div>
+
+        <div class="cover">
+          <div class="cover__img">
+            <img src="./music/bad blood.png" alt="" />
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="left">
+            <h1 class="song"> Bad Blood </h1>
+            <span class="singer"> Taylor Swift </span>
+          </div>
+
+          <div class="right">
+            <button class="btn like">
+              <i class="fas fa-heart"></i>
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="status">
+          <div class="progress-bar">
+            <div class="progress-bar__width"></div>
+          </div>
+          <span class="time time--passed"> 00:00 </span>
+          <span class="time time-total"> 00:00 </span>
+        </div>
+
+        <div class="actions">
+          <div class="audio-container">
+            <audio src="music/bad blood.mp3"></audio>
+          </div>
+
+          <button class="btn backward"> <i class="fas fa-backward"></i> </button>
+
+          <button class="btn play">
+            <i class="fas fa-play"></i>
+          </button>
+
+          <button class="btn forward"> <i class="fas fa-forward"></i> </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
